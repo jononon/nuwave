@@ -1,0 +1,49 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="static/js/jquery-3.1.0.min.js"></script>
+  <script src="static/js/angular.min.js"></script>
+  <script src="https://cdn.plyr.io/2.0.18/plyr.js"></script>
+  <link rel="stylesheet" href="https://cdn.plyr.io/2.0.18/plyr.css">
+  <script src="static/js/plangular.min.js"></script>
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+</head>
+<style>
+  body {
+    animation: colorchange 60s infinite; /* animation-name followed by duration in seconds*/
+       /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 60s infinite; /* Chrome and Safari */
+    color:white;
+  }
+
+  @keyframes colorchange
+  {
+    0%   {background: red;}
+    33%  {background: blue;}
+    66%  {background: green;}
+    100% {background: red;}
+  }
+
+  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+  {
+    0%   {background: red;}
+    33%  {background: blue;}
+    66%  {background: green;}
+    100% {background: red;}
+  }
+</style>
+<body>
+  <div class=container>
+    <row>
+      <center>
+        <h1 class="display-1">nuwave</h1>
+        <h3>discovery simplified</h3>
+      </center>
+    </row>
+    <row>
+      <center>
+        <iframe width="100%" height="70%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/447785271&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+      </center>
+    </row>
+  </div>
+</body>
